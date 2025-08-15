@@ -1,0 +1,25 @@
+/* ========== 產品列表頁專用樣式 ========== */
+
+/* 左側分類啟用狀態 */
+.category-active {
+  color: var(--primary-400);
+}
+
+/* 分頁按鈕：統一按鈕邊角與互動狀態 */
+.page-item .btn {
+  padding: 8px 15px;
+  border-radius: 0;
+  font-weight: 400;
+  transition: 0.3s;
+}
+.page-item .btn:hover {
+  background-color: var(--primary-300);
+}
+.page-item .active {
+  background-color: var(--primary-300);
+}
+
+/* disabled 狀態不變色 */
+.page-item .disabled:hover {
+  background-color: transparent;
+}
