@@ -21,7 +21,7 @@ a {
 nav a {
     color: var(--primary-900);
     text-decoration: none;
-    /*移除文字裝飾線條*/
+    
     font-weight: 500;
     line-height: 1.5;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .header {
-background-image: url(style/image/hero.png);
+background-image: url(2025summer_webcamp/web3/style/image/hero.png);
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center;
@@ -46,7 +46,7 @@ background-image: url(style/image/hero.png);
     .header {
         padding-top: 87px;
         padding-bottom: 87px;
-background-image: url(style/image/hero-sm.png);
+background-image: url(2025summer_webcamp/web3/style/image/hero-sm.png);
     }
     .h3 {
         font-size: 20px;
@@ -54,8 +54,8 @@ background-image: url(style/image/hero-sm.png);
 }
 
 .quote {
-    border-radius: 12px; /*外框圓角(半徑12px)*/
-    text-align: center; /*文字置中對齊*/
+    border-radius: 12px; 
+    text-align: center; 
 }
 
 @media(max-width:767px) {
@@ -65,23 +65,13 @@ background-image: url(style/image/hero-sm.png);
 }
 
 .intro img {
-  width: 100%;          /* 圖片寬度會等於欄寬 */
-  height: auto;          /* 等比例縮放 */
-  display: block;        /* 清除底部空隙 */
-  max-width: 100%;       /* 防止圖片過大溢出 */
+  width: 100%;         
+  height: auto;         
+  display: block;        
+  max-width: 100%;       
 }
 
-/* 
-@media (max-width: 576px) {
-  .intro img {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-} */
+
 
 
 .section-lined {
@@ -94,7 +84,7 @@ background-image: url(style/image/hero-sm.png);
 }
 
 .history-list {
-    list-style-type: disc; /*清單要加上圓點的樣式*/
+    list-style-type: disc;
     padding-left: 24px;
 }
 
@@ -105,22 +95,22 @@ background-image: url(style/image/hero-sm.png);
 
 .bi {
     padding-right: 8px;
-    vertical-align: bottom; /*底部對齊*/
+    vertical-align: bottom; 
 }
 
 .btn {
-    border-radius: 4px; /*按鈕圓角*/
+    border-radius: 4px; 
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
-    cursor: pointer; /*游標改成手指圖示*/
+    cursor: pointer; 
     border: none; /*無外框*/
     background-color: transparent; /*透明*/
 }
 
 .btn-register {
  background-color: var(--neutral-900); 
- padding: 12px 24px; /*上下12 左右24*/
+ padding: 12px 24px; 
  color: var(--neutral-white);  
 }
 
@@ -132,7 +122,7 @@ background-image: url(style/image/hero-sm.png);
 
 .footer {
     background-color: var(--neutral-100);
-    /* text-align: center; */
+    
 }
 
 .footer p {
@@ -158,3 +148,4 @@ a:hover {
     transition: background-color 0.3s ease;
 
 }
+
