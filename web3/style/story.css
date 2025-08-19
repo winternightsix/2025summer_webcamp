@@ -1,0 +1,159 @@
+:root {
+    --primary-200: #E8FEC5;
+    --primary-300: #C0FA73;
+    --primary-400: #57A203;
+    --primary-100: #F5FEE7;
+    --neutral: #F8F9FA;
+    --neutral-white: #FFFFFF;
+    --neutral-100: #F8F9FA;
+    --neutral-300: #DEE2E6;
+    --neutral-500: #ADB5BD;
+    --neutral-600: #6C757D;
+    --neutral-900: #212529;
+    --danger: #D74F4F
+}
+
+a {
+    text-underline-offset: 4px;
+    color: var(--primary-400);
+}
+
+nav a {
+    color: var(--primary-900);
+    text-decoration: none;
+    /*移除文字裝飾線條*/
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+}
+
+.header {
+background-image: url(/style/image/hero.png);
+    background-repeat: no-repeat; /*背景圖不重複*/
+    background-size: cover; /*背景圖填滿整個區塊*/
+    background-position: center; /*背景圖位置置中*/
+    padding: 152px 0; /*(400-96)/2*/
+    text-align: center; /*文字置中*/
+}
+
+@media(max-width:767px) {
+    .header {
+        padding-top: 87px;
+        padding-bottom: 87px;
+background-image: url(/style/image/hero-sm.png);
+    }
+    .h3 {
+        font-size: 20px;
+    }
+}
+
+.quote {
+    border-radius: 12px; /*外框圓角(半徑12px)*/
+    text-align: center; /*文字置中對齊*/
+}
+
+@media(max-width:767px) {
+    .quote {
+        text-align:left;
+    }
+}
+
+.intro img {
+  width: 100%;          /* 圖片寬度會等於欄寬 */
+  height: auto;          /* 等比例縮放 */
+  display: block;        /* 清除底部空隙 */
+  max-width: 100%;       /* 防止圖片過大溢出 */
+}
+
+/* 
+@media (max-width: 576px) {
+  .intro img {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+} */
+
+
+.section-lined {
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.history-item {
+    border-left: 1px solid var(--neutral-900);
+    padding-left: 8px;
+}
+
+.history-list {
+    list-style-type: disc; /*清單要加上圓點的樣式*/
+    padding-left: 24px;
+}
+
+.idea-list {
+    padding-left: 12px;
+    border-left: 3px solid var(--neutral-300);
+}
+
+.bi {
+    padding-right: 8px;
+    vertical-align: bottom; /*底部對齊*/
+}
+
+.btn {
+    border-radius: 4px; /*按鈕圓角*/
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    cursor: pointer; /*游標改成手指圖示*/
+    border: none; /*無外框*/
+    background-color: transparent; /*透明*/
+}
+
+.btn-register {
+ background-color: var(--neutral-900); 
+ padding: 12px 24px; /*上下12 左右24*/
+ color: var(--neutral-white);  
+}
+
+@media(max-width:576px) {
+    .btn-register{
+         padding: 8px 16px;
+    }
+}
+
+.footer {
+    background-color: var(--neutral-100);
+    /* text-align: center; */
+}
+
+.footer p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--neutral-600);
+    font-weight: 400;
+}
+
+.footer-divider {
+  border-top: 1px solid var(--neutral-300);
+}
+
+a:hover {
+    color: var(--primary-300);
+    text-decoration: underline;
+}
+
+.btn-register:hover {
+    background-color: var(--primary-400);
+    color: var(--neutral-white);
+    transition: background-color 0.3s ease;
+}
