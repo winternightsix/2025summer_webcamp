@@ -34,19 +34,19 @@ body {
 }
 
 .header {
-background-image: url(/style/image/hero.png);
-    background-repeat: no-repeat; /*背景圖不重複*/
-    background-size: cover; /*背景圖填滿整個區塊*/
-    background-position: center; /*背景圖位置置中*/
-    padding: 152px 0; /*(400-96)/2*/
-    text-align: center; /*文字置中*/
+background-image: url(style/image/hero.png);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    padding: 152px 0;
+    text-align: center; 
 }
 
 @media(max-width:767px) {
     .header {
         padding-top: 87px;
         padding-bottom: 87px;
-background-image: url(/style/image/hero-sm.png);
+background-image: url(style/image/hero-sm.png);
     }
     .h3 {
         font-size: 20px;
@@ -156,4 +156,5 @@ a:hover {
     background-color: var(--primary-400);
     color: var(--neutral-white);
     transition: background-color 0.3s ease;
+
 }
